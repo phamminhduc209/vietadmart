@@ -732,6 +732,10 @@ button:focus { outline: none; }
   padding-left: 0!important;
   line-height: 28px!important;
 }
+.vertical-dropdown-menu .group-link-default li:hover a {
+  color: #028141;
+  font-weight: bold;
+}
 .box-vertical-megamenus .vertical-menu-content ul li:hover .vertical-dropdown-menu {
   visibility: visible;
   display: block;
@@ -1211,6 +1215,8 @@ li.viewall {
 .support-customer .block-border {
   padding: 30px 0;
   border-top: 1px solid #999999;
+  float: left;
+  width: 100%;
 }
 .box-spc .box-spc-img {
   float: left;
@@ -2259,8 +2265,8 @@ ul.slct-has-child li {
   color: #8e8e8e;
 }
 .home-product .owl-prev {
-  left: -17px;
+  left: 0;
 }
 .home-product .owl-next {
-  right: -17px;
+  right: 0;
 }
