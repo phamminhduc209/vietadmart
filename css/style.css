@@ -2111,12 +2111,17 @@ ul.slct-has-child li {
 }
 .block-banner ul li {
   display: inline-block;
+  padding-right: 6px;
+}
+.block-banner ul li:last-child {
+  padding-right: 0;
 }
 .block-banner ul li .box-banner {
   float: left;
   width: 100%;
   clear: both;
   position: relative;
+  overflow: hidden;
 }
 .block-banner ul li:last-child .box-banner {
   margin-bottom: 8px;
@@ -2167,17 +2172,23 @@ ul.slct-has-child li {
   z-index: 2;
   position: relative;
 }
-.block-banner .box-content2 {
-  text-align: right;
+.block-banner .box-content2 .box-content-bos {
+  padding-left: 10px;
+}
+.block-banner .box-content2 .box-content-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.block-banner ul li:nth-child(2) .box-banner {
+  margin-bottom: 8px;
+}
+.block-banner ul li:nth-child(2) .box-banner:last-child {
+  margin-bottom: 0;
 }
 .block-banner .box-content3 .box-content-bos {
   padding-left: 25px;
 }
-.block-banner .box-content2 .box-content-title {
-  margin-bottom: 283px;
-  font-size: 16px;
-  font-weight: bold;
-} 
 .block-banner .box-content3 .box-content-title {
   margin-bottom: 39px;
   font-size: 16px;

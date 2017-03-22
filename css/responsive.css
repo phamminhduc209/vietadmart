@@ -322,6 +322,10 @@
 	.block-ft-title .block-content {
 		margin-bottom: 30px;
 	}
+	.block-banner ul li {
+		display: inline-block;
+		padding-right: 0;
+	}
 }
 /*--------------------
 [9. Styles for devices(<=480px)]
@@ -576,6 +580,9 @@
 	.box-content1 .box-content-bos {
     	padding-right: 0;
 	}
+	.block-banner ul li .box-banner {
+		margin-bottom: 8px;
+	}
 }
 /*--------------------
 [9. Styles for devices(<=320px)]
@@ -599,14 +606,31 @@
 	    color: #fff;
 	    padding-left: 10px;
 	    padding-right: 10px;
-	    font-size: 8px;
+	    font-size: 14px;
+	}
+	.box-vertical-megamenus .title .btn-open-mobile>.fa {
+	    line-height: inherit;
+	    font-size: 25px;
 	}
 	#main-menu .navbar-header .navbar-brand {
 	    padding: 0;
 	    padding-left: 10px;
 	    line-height: 50px;
 	    color: #fff;
-	    font-size: 10px;
+	    font-size: 14px;
 	    font-weight: bold;
+	}
+	#box-vertical-megamenus .vertical-menu-content {
+	    min-width: 273px;
+	    display: none;
+	}
+	#box-vertical-megamenus {
+	    width: 100%;
+	    height: 50px;
+	    float: left;
+	}
+	#box-vertical-megamenus .box-vertical-megamenus {
+	     right: 15px; 
+	    padding-bottom: 0;
 	}
 }
