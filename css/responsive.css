@@ -47,6 +47,9 @@
 	    padding: 0 15px;
 	}
 }
+@media screen and (max-width: 1339px) {
+	.menu-left-scroll { display: none; }
+}
 /*----------------
 [2. Styles for devices(>1280px)]
 */

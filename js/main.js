@@ -40,12 +40,6 @@
     }, 'slow');
   });
 
-  // ===== Scroll to Top 2 ==== 
-  $('#return-to-top2').click(function() {
-    $('body,html').animate({
-      scrollTop : 0
-    }, 'slow');
-  });
 
   /* Toggle nav menu*/
   $(document).on('click','.toggle-menu',function(){

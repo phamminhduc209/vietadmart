@@ -28,7 +28,7 @@ function page(){
 
         if($(id).length > 0){
           $('html,body').animate({
-	        scrollTop: $(id).offset().top - 75},
+	        scrollTop: $(id).offset().top - 100},
 	        'slow');
         }
       }

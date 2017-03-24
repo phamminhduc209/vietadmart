@@ -925,7 +925,7 @@ button:focus { outline: none; }
 }
 .menu-left-scroll {
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 6%;
   width: 70px;
   text-align: center;
@@ -956,9 +956,10 @@ button:focus { outline: none; }
 .menu-left-scroll.fixed {
   padding: 0;
   position: fixed;
-  z-index: 1000;
-  top: 90px;
-  left: 6%;
+  z-index: 2;
+  top: 50px;
+  left: 0;
+  width: 100%;
   -webkit-box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
   box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
@@ -967,6 +968,15 @@ button:focus { outline: none; }
   -ms-transition: 0.15s linear;
   -o-transition: 0.15s linear;
   transition: 0.15s linear;
+}
+.menu-left-scroll.fixed ul {
+  display: table;
+  width: 100%;
+}
+.menu-left-scroll.fixed ul li {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
 }
 .menu-left-scroll.fixed ul li.active {
   background: #efe6e0;
