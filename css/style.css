@@ -940,6 +940,17 @@ button:focus { outline: none; }
   -o-transition: 0.15s linear;
   transition: 0.15s linear;
 }
+.menu-left-scroll.active.fixed { 
+  display: block;
+  -webkit-box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+  -moz-box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+  box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+  -webkit-transition: 0.15s linear;
+  -moz-transition: 0.15s linear;
+  -ms-transition: 0.15s linear;
+  -o-transition: 0.15s linear;
+  transition: 0.15s linear;
+}
 .menu-left-scroll ul li a {
   display: inline-block;
   text-align: center;

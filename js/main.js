@@ -45,6 +45,30 @@
   $(document).on('click','.toggle-menu',function(){
     $(this).closest('.home-header').find('.navbar-collapse').toggle("slow");
     return false;
-  })
+  });
+
+  $(function() {
+    var menu_left_scroll = $('.menu-left-scroll');
+    var hieghtThreshold = $(".page-top").offset().top;
+    var hieghtThreshold_end  = $(".page-top").offset().top +$(".page-top").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end ) {
+            menu_left_scroll.addClass('active');
+        } else {
+            menu_left_scroll.removeClass('active');
+        }
+    });
+  });
+
+//  $(window).resize(function() {
+//   if ($(window).width() < 1024) {
+//      alert('Less than 960');
+//   }
+//  else {
+//     alert('More than 960');
+//  }
+// });
 
 })(jQuery); // End of use strict
