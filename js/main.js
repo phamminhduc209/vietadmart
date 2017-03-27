@@ -47,28 +47,22 @@
     return false;
   });
 
-  $(function() {
+  // Screen min width 1024 and max width 1339, show menu scroll on top.
+  if ($(window).width() > 1024 && $(window).width() < 1339) {
+    $(function() {
     var menu_left_scroll = $('.menu-left-scroll');
     var hieghtThreshold = $(".page-top").offset().top;
-    var hieghtThreshold_end  = $(".page-top").offset().top +$(".page-top").height() ;
+    var hieghtThreshold_end  = $(".page-top").offset().top + $(".page-top").height();
     $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+      var scroll = $(window).scrollTop();
 
-        if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end ) {
-            menu_left_scroll.addClass('active');
-        } else {
-            menu_left_scroll.removeClass('active');
-        }
-    });
-  });
-
-//  $(window).resize(function() {
-//   if ($(window).width() < 1024) {
-//      alert('Less than 960');
-//   }
-//  else {
-//     alert('More than 960');
-//  }
-// });
+      if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end) {
+          menu_left_scroll.addClass('active');
+      } else {
+          menu_left_scroll.removeClass('active');
+      }
+      })
+    })
+  }
 
 })(jQuery); // End of use strict
