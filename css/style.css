@@ -108,9 +108,8 @@ button:focus { outline: none; }
   border-radius: 0 !important;
   border-color: #cccccc;
 }
-.wrapper {
-  position: relative;
-}
+.wrapper { position: relative; }
+.po-re { position: relative; }
 /*===== Back To Top =====*/
 .td-scroll-up {
   cursor: pointer;
@@ -925,8 +924,8 @@ button:focus { outline: none; }
 }
 .menu-left-scroll {
   position: absolute;
-  top: 70px;
-  left: 6%;
+  top: 15px;
+  left: -100px;
   width: 70px;
   text-align: center;
   background: #fff;

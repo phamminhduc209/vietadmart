@@ -1,29 +1,23 @@
 /*------------------------------------------------------------------
 [Table of contents]
-1. Styles for devices(>1423px)
-2. Styles for devices(>1280px)
-3. Styles for devices(>1200px)
-4. Styles for devices(>1024px)
-5. Styles for devices(>1024px)
-6. Styles for devices(>=800px and <=1024px)
-7. Styles for devices(>=768px and <=992px)
-8. Styles for devices(>=481px and <=767px)
-9. Styles for devices(<=480px)
-9. Styles for devices(<=320px)
+1. 	Styles for devices(>1440px)
+2. 	Styles for devices(>=993px and <=1200px)
+3. 	Styles for devices(>1339px)
+4. 	Styles for devices(>1280px)
+5. 	Styles for devices(>1080px)
+6. 	Styles for devices(>1024px)
+7. 	Styles for devices(>992px)
+8. 	Styles for devices(>=800px and <=1024px)
+9. 	Styles for devices(>=768px and <=992px)
+10. Styles for devices(>=481px and <=767px)
+11. Styles for devices(<=480px)
+12. Styles for devices(<=320px)
 -------------------------------------------------------------------*/
 /*----------------
-[1. Styles for devices(>1423px)]
+[1. Styles for devices(>1440px)]
 */
-@media (max-width: 1423px){
-	.menu-left-scroll { width: 50px; left: 15px; top: 75px; }
-	.menu-left-scroll ul li a {
-	    height: 45px;
-	    line-height: 45px;
-	}
-	.menu-left-scroll.fixed {
-		left: 0;
-	}
-}
+@media (max-width: 1440px){}
+
 /*----------------
 [2. Styles for devices(>=993px and <=1200px)]
 */
@@ -47,6 +41,9 @@
 	    padding: 0 15px;
 	}
 }
+/*----------------
+[3. Styles for devices(>1339px)]
+*/
 @media screen and (max-width: 1339px) {
 	.menu-left-scroll { 
 		display: none;
@@ -61,7 +58,7 @@
 	}
 }
 /*----------------
-[2. Styles for devices(>1280px)]
+[4. Styles for devices(>1280px)]
 */
 @media (max-width: 1280px){
 	.menu-left-scroll { 
@@ -78,13 +75,11 @@
 }
 
 /*----------------
-[3. Styles for devices(>1200px)]
+[5. Styles for devices(>1080px)]
 */
-@media (max-width: 1080px){
-	
-}
+@media (max-width: 1080px){}
 /*----------------
-[4. Styles for devices(>1024px)]
+[6. Styles for devices(>1024px)]
 */
 @media (max-width: 1024px){
 	.box-vertical-megamenus .title {
@@ -96,19 +91,17 @@
 	}
 }
 /*----------------
-[5. Styles for devices(>1024px)]
+[7. Styles for devices(>992px)]
 */
 @media (max-width: 992px){
 	.menu-left-scroll { display: none; }
 }
 /*----------------
-[6. Styles for devices(>=800px and <=1024px)]
+[8. Styles for devices(>=800px and <=1024px)]
 */
-@media (min-width: 800px) and (max-width: 1024px) {
-	
-}
+@media (min-width: 800px) and (max-width: 1024px) {}
 /*--------------------
-[7. Styles for devices(>=768px and <=992px)]
+[9. Styles for devices(>=768px and <=992px)]
 */
 @media (min-width: 768px) and (max-width: 992px) {
 	.container {
@@ -154,7 +147,7 @@
 	}
 }
 /*--------------------
-[8. Styles for devices(>=481px and <=767px)]
+[10. Styles for devices(>=481px and <=767px)]
 */
 @media (min-width: 481px) and (max-width: 767px) { 
 	.container {
@@ -351,7 +344,7 @@
 	}
 }
 /*--------------------
-[9. Styles for devices(<=480px)]
+[11. Styles for devices(<=480px)]
 */
 @media (max-width: 480px) {
 	.container {
@@ -608,7 +601,7 @@
 	}
 }
 /*--------------------
-[9. Styles for devices(<=320px)]
+[12. Styles for devices(<=320px)]
 */
 @media (max-width: 320px) {
 	.container {
