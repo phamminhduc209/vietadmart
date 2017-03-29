@@ -632,15 +632,30 @@
 		margin-bottom: 8px;
 	}
 	.bestseller-item .price {
-	  font-size: 15px;
-	  font-weight: bold;
+		font-size: 15px;
+		font-weight: bold;
 	}
 	.bestseller-item .name { margin-top: 15px; }
 	.bestseller-item .name a {
-	  font-size: 15px;
+		font-size: 15px;
 	}
 	.info-supplier .col-xs-6 { width: 100%; }
 	.block-banner ul li {   padding-right: 0; }
+	.bestseller-item { border-bottom: 1px solid rgba(221, 221, 221, 0.7); }
+	.bestseller-item .name {
+		height: 80px;
+		overflow: hidden;
+		line-height: 1.7;
+	}
+	.bestseller-item .image {
+		float: left;
+		width: 40%;
+		margin-right: 10px;
+		margin-left: 15%;
+	}
+	.block-banner ul li:nth-child(n+2){
+		padding-left: 75px;
+	}
 }
 /*--------------------
 [12. Styles for devices(<=320px)]
@@ -690,5 +705,19 @@
 	#box-vertical-megamenus .box-vertical-megamenus {
 	     right: 15px; 
 	    padding-bottom: 0;
+	}
+	.bestseller-item .image {
+		float: left;
+		width: 40%;
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	.bestseller-item .name {
+		height: 40px;
+		overflow: hidden;
+		line-height: 1.7;
+	}
+	.block-banner ul li:nth-child(n+2) {
+		padding-left: 0;
 	}
 }

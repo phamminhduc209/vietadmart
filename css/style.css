@@ -1221,6 +1221,8 @@ li.viewall {
   height: 40px;
   margin-bottom: 10px;
   margin-top: 10px;
+  overflow: hidden;
+  line-height: 1.7;
 }
 .bestseller-item .name a {
   font-size: 12px;
