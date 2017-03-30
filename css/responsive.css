@@ -14,11 +14,6 @@
 12. Styles for devices(<=320px)
 -------------------------------------------------------------------*/
 /*----------------
-[1. Styles for devices(>1440px)]
-*/
-@media (max-width: 1440px){}
-
-/*----------------
 [2. Styles for devices(>=993px and <=1200px)]
 */
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -73,15 +68,10 @@
 		transition: 0.15s linear;
 	}
 }
-
-/*----------------
-[5. Styles for devices(>1080px)]
-*/
-@media (max-width: 1080px){}
 /*----------------
 [6. Styles for devices(>1024px)]
 */
-@media (max-width: 1024px){
+@media (min-width: 992px) and (max-width: 1024px){
 	.box-vertical-megamenus .title {
 	    font-size: 12px;
 	}
@@ -101,19 +91,44 @@
 	.bx-wrapper {
 	  margin: 0;
 	}
-	/*.block-banner ul li .box-banner.box-content3 { width: 50%; }*/
+	.block-banner ul li:nth-child(2),
+	.block-banner ul li:nth-child(3) {
+		width: 49%;
+		float: left;
+		margin-left: 4px;
+	}
+	.block-banner ul li .box-banner img { width: 100%; }
+	.block-banner .box-content2 .box-content-title {
+		margin-bottom: 445px;
+		font-size: 16px;
+		font-weight: bold;
+	}
 }
 /*----------------
 [7. Styles for devices(>992px)]
 */
 @media (max-width: 992px){
 	.menu-left-scroll { display: none; }
-
+	.block-banner .box-content2 .box-content-title {
+		margin-bottom: 425px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+/*----------------
+[7. Styles for devices(>991px)]
+*/
+@media (max-width: 991px){
+	.block-banner .box-content2 .box-content-title {
+		margin-bottom: 340px;
+	}
 }
 /*----------------
 [8. Styles for devices(>=800px and <=1024px)]
 */
-@media (min-width: 800px) and (max-width: 1024px) {}
+@media (min-width: 800px) and (max-width: 1024px) {
+	.block-banner ul li .box-banner img { width: 100%; }
+}
 /*--------------------
 [9. Styles for devices(>=768px and <=992px)]
 */
@@ -164,19 +179,37 @@
 	}
 	.slider-left { display: none; }
 	.header-top-right { width: 100%;   margin-left: 0; padding: 0 15px; }
+	.block-banner ul li:nth-child(2),
+	.block-banner ul li:nth-child(3) {
+		width: 49%;
+		float: left;
+		margin-left: 4px;
+	}
+	.block-banner ul li:last-child .box-banner {
+	    margin-bottom: 5px;
+	}
+	.block-banner ul li .box-banner img { width: 100%; }
 }
 /*--------------------
-[10. Styles for devices(>=481px and <=767px)]
+[10. Styles for devices(>=767px)]
 */
 @media (max-width: 767px) {
 	.bx-wrapper {
-	  margin-bottom: 20px;
+		margin-bottom: 20px;
 	}
 	.product-item .pro-img { text-align: center; margin-bottom: 10px; }
 	.pro-info { padding-left: 15px; }
 	.pro-price-producer { text-align: center; }
 	.related-products .block-title p { margin-top: 15px;}
-
+	.block-banner ul li .box-banner img { width: 100%; }
+}
+/*--------------------
+[10. Styles for devices(>=767px)]
+*/
+@media (max-width: 640px) {
+	.block-banner .box-content2 .box-content-title {
+		margin-bottom: 280px;
+	}
 }
 /*--------------------
 [10. Styles for devices(>=481px and <=767px)]
@@ -653,9 +686,6 @@
 		margin-right: 10px;
 		margin-left: 15%;
 	}
-	.block-banner ul li:nth-child(n+2){
-		padding-left: 75px;
-	}
 }
 /*--------------------
 [12. Styles for devices(<=320px)]
@@ -716,8 +746,5 @@
 		height: 40px;
 		overflow: hidden;
 		line-height: 1.7;
-	}
-	.block-banner ul li:nth-child(n+2) {
-		padding-left: 0;
 	}
 }

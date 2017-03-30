@@ -2146,7 +2146,10 @@ ul.slct-has-child li {
   font-weight: bold;
 }
 .block-banner {
-  padding-bottom: 45px;
+  padding-bottom: 45px;  
+}
+.block-banner ul {
+  text-align: center;
 }
 .block-banner ul li {
   display: inline-block;
@@ -2187,7 +2190,9 @@ ul.slct-has-child li {
 .box-content-bos1 {
   display: table-cell;
   vertical-align: middle;
+  text-align: left;
 }
+.box-content-bos2 { text-align: right; }
 .block-banner .box-content1 .box-content-title {
   font-size: 30px;
   font-weight: bold;
