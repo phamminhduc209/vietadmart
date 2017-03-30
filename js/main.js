@@ -4,7 +4,7 @@
   // Script initialization
   $(window).load(function () {
     /* Page loader */;
-    $('#loading').delay(600).fadeOut(1000);
+    $('#loading').delay(500).fadeOut(1000);
   });
 
   // Slide Carousel
